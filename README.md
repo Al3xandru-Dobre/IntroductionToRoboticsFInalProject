@@ -6,6 +6,12 @@ At its core, the ESP32 acts as the brain of the system, handling signal processi
 
 # Table of contents
 
+- [Introduction](#Introduction)
+- [Prerequisites](#Q&A-and-clarifications)
+- [Bill of Materials(BOM)](#Bill-of-Materials)
+
+# Q&A and clarifications
+
 ## What is the system boundary ?
 
 The system consists in an Continous INPUT/OUTPUT stream of data, between the sensors(and user inputs) and the board ESP 32, that outputs to a series of MATRIX LED to visualise the OUTPUT frequency in a more comprihensable way, translating the signal frequency of sounds to colors.
