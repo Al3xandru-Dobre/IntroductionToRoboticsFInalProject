@@ -1,5 +1,11 @@
 # Introduction
 
+Final project for my lab of Introduction to Robotics. This project creates an interactive audio-visual system that translates sound frequencies into dynamic light patterns using an ESP32 microcontroller, LED matrices, and a piano keyboard. Designed to bridge the gap between digital signal processing and tangible user interaction, the system captures audio inputs—whether from a microphone, a MIDI keyboard, or a user-uploaded file—and processes them in real time to generate immersive visual and auditory outputs.
+
+At its core, the ESP32 acts as the brain of the system, handling signal processing, state management, and wireless communication (via Wi-Fi and Bluetooth) to enable seamless interaction with a mobile app. The LED matrix visualizes sound frequencies as vibrant color patterns, while a speaker outputs the processed audio, creating a multisensory experience. Users can play notes on the keyboard, upload music files, or even sing into the microphone, with the system adapting to each input in real time.
+
+# Table of contents
+
 ## What is the system boundary ?
 
 The system consists in an Continous INPUT/OUTPUT stream of data, between the sensors(and user inputs) and the board ESP 32, that outputs to a series of MATRIX LED to visualise the OUTPUT frequency in a more comprihensable way, translating the signal frequency of sounds to colors.
