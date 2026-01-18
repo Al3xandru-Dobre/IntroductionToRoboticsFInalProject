@@ -31,3 +31,75 @@ There are a few key problems in the implementation, both on the softwear and har
 ## Why is not just a tutorial ?
 
   The project consists of multiple layers of app, from the input layer of the sensors (converting analog to digital is an entire thing), to the data processing layer, the UI and UX, hardwear handling such as the key presses, communication between the board, user and the devices ,and the handle of the MATRIX display creating a comprehensible visualiser. Thus beeing said, it reaquires combining diffrent developing areas and varied procedure to put everything together.  
+
+
+# Bill of Materials
+
+## 1.Main Controller Board
+  - ESP 32 Development Board (e.g. ESP32-WROOM-32)
+  - Purpose: Main processing unit for signal processing, state machine logic, and communication (Wi-Fi/Bluetooth)
+  - Quantity: 1
+
+## 2.Input Components
+  ### A. Microphone Module (e.g., MAX4466, INMP441 I2S MEMS Microphone, or electret microphone with amplifier)
+  - Purpose: Capture analog audio signals for processing
+  - Quantity: 1
+
+  ### B. Piano Keyboard (MIDI Input, MIDI Keyboard (e.g., 25-key or 49-key USB/MIDI keyboard))
+  - Mechanical keyboard switches (e.g., Cherry MX or tactile switches)
+  - Diodes (1N4148) for debouncing
+  - PCB or breadboard for wiring
+  - Purpose: Digital input for notes/keys.
+  - Quantity: 1 (or components for DIY)
+
+  ### C. User Input (Hardwear Buttons): Tactile Push Buttons (e.g., 6mm x 6mm)
+  - Purpose: Hardware controls for mode selection, volume, etc.
+  - Quantity: 4–6 (depending on features)
+
+## 3.Output Components
+  ### A. LED Matrix Display (Addressable RGB LED Matrix (e.g., WS2812B/NeoPixel, 8x8 or 16x16 panels))
+  - Purpose: Visualize frequency/color output.
+  - Quantity: 4–8 panels (depending on desired size)
+
+  ### B. Speaker/Audio Output Small Speaker (e.g., 8Ω 0.5W speaker)
+  - Alternative: I2S Audio DAC Module (e.g., MAX98357A) + speaker
+  - Purpose: Play processed audio output.
+  - Quantity: 1
+
+## 4.Communication Modules
+- Built-in ESP32 Features:
+  - Wi-Fi and Bluetooth (no additional modules needed).
+  - Purpose: Wireless communication with phone/app.
+
+## 5.Power Supply (5V Power Supply (e.g., USB-C PD adapter or 5V 2A wall adapter))
+  - Purpose: Power the ESP32, LED matrix, and other components.
+  - Quantity: 1
+
+## 6.Miscellaneous Components
+  - Breadboard/PCB (for prototyping/wiring)
+      - Quantity: 1–2
+  - Jumper Wires (Male-to-Male, Male-to-Female)
+      - Quantity: 20–30
+  - Resistors (e.g., 220Ω, 1kΩ, 10kΩ for pull-ups/pull-downs)
+       - Quantity: 10–20
+  - Capacitors (e.g., 100nF, 10µF for noise filtering)
+       - Quantity: 5–10
+   - Transistors/MOSFETs (e.g., 2N2222 or IRLZ44N for driving high-current loads like LED matrices)
+       - Quantity: 2–4
+    
+## 7.Softwear Dependencies (Not part of BOM but required for functionality)
+
+  - Arduino IDE or PlatformIO (for ESP32 Programming)
+  - Libraries :
+    - FastLED/NeoPixel (for LED matrix control)
+    - ESP32 Wi-Fi/Bluetooth libraries
+    - Audio processing libraries (e.g., ArduinoFFT for frequency analysis)
+    - MIDI library
+
+    
+ 
+
+    
+
+
+  
