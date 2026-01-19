@@ -7,7 +7,7 @@ At its core, the ESP32 acts as the brain of the system, handling signal processi
 # Table of contents
 
 - [Introduction](#Introduction)
-- [Prerequisites](#Q&A-and-clarifications)
+- [Q&A and clarifications](#Q&A-and-clarifications)
 - [Bill of Materials(BOM)](#Bill-of-Materials)
 
 # Q&A and clarifications
